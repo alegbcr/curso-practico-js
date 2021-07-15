@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Descuentos</title>
+
+  <!-- CSS Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">  
+
+  <!-- Fontawesome -->
+  <script src="https://kit.fontawesome.com/ac45cc33a3.js" crossorigin="anonymous"></script>
+
+  <!-- CSS Custom -->
+  <link rel="stylesheet" href="./main.css">
+
+</head>
+<body>
+  <header>
+    <div class="container mt-5">
+      <h1 class="d-flex justify-content-center">Descuentos</h1>
+      <p class="d-flex justify-content-center">Este es una herramienta para calcular descuentos.</p>
+    </div>
+  </header>
+
+  <!-- Calculadora de Descuentos -->
+  <section class="container mt-5">
+    <div class="row d-flex justify-content-center">
+      <h5 class="col-4 mb-3">Calcula el precio a pagar de tus productos con descuentos</h5>
+  
+      <form class="col-8">
+        <div class="mb-2">
+          <label for="InputPrice">Escribe el precio de tu producto:</label>
+          <input id="InputPrice" type="number" />
+        </div>
+  
+        <div class="mb-2">
+          <label for="inputDiscount">Escribe el descuento de tu producto:</label>
+          <input id="inputDiscount" type="number" />
+        </div>
+  
+        <button type="button" onclick="onClickButtonDiscount()">Calcular el precio</button>
+  
+        <p id="ResultPrice"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Aplicador de Cupones -->
+  <section class="container mt-5">
+    <div class="row d-flex justify-content-center">
+      <div class="col-4 mb-3">
+        <h5 class="mb-3">Aplica tu Cúpon de Descuento</h5>
+        <h6>Cupones disponibles</h6>
+        <ul>
+          <li>Renegado</li>
+          <li>aquel_que_vive</li>
+          <li>sin_miedo</li>
+        </ul>
+      </div>
+  
+      <form class="col-8">
+        <div class="mb-2">
+          <label for="InputPriceCoupon">Escribe el precio de tu producto:</label>
+          <input id="InputPriceCoupon" type="number" />
+        </div>
+
+        <div class="mb-2">
+          <label for="InputCoupon">Escribe el cupón de descuento para tu producto:</label>
+          <input id="InputCoupon" type="text" />
+        </div>
+  
+        <button type="button" onclick="onClickButtonCoupon()">Aplicar cupón</button>
+  
+        <p id="ResultCoupon"></p>
+      </form>
+    </div>
+  </section>
+  
+  <script src="./descuentos.js"></script>
+</body>
+</html>
